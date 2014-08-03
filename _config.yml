@@ -1,4 +1,4 @@
-exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/Makefile']
+exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/less']
 timezone:   America/Los_Angeles
 markdown:   kramdown
 
