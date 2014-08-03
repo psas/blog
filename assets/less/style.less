@@ -1,17 +1,35 @@
 @import "bootstrap.less";
 
 @footer-height:     100px;
+@super-light:       #f7f8fa;
 @psas-light-green:  #6a7f10;
+@psas-dark-green:   #363f09;
+@psas-red:          #a33f1f;
+
 
 // Sticky Footer
 html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
 body > .wrapper { height: auto; min-height: 100%; }
-#content { padding-bottom: @footer-height; }
+#content { padding-bottom: @footer-height+120px; }
 #footer { clear: both; position: relative; z-index: 10; height: @footer-height; margin-top: -@footer-height; }
 
-#header-wrap { background: @gray-lighter url(/assets/img/noise.gif) repeat; }
-#breadcrumb { .hidden-xs(); background:#f7f8fa; }
-#footer { background: @psas-light-green; color: #fff; }
+// Base Colours
+#header-wrap {
+    border-top: 4px solid @psas-dark-green;
+    background: @gray-lighter url(/assets/img/noise.gif) repeat;
+    border-bottom: 1px solid #c8c8c8;
+}
+#breadcrumb {
+    .hidden-xs();
+    background: @super-light;
+    border-top: 1px dashed #d9d9d9;
+}
+#footer {
+    background: @psas-light-green;
+    -webkit-box-shadow: inset 0px 42px 30px -50px @psas-dark-green;
+    -moz-box-shadow: inset 0px 42px 30px -50px @psas-dark-green;
+    box-shadow: inset 0px 42px 30px -50px @psas-dark-green;
+}
 
 #header {
     .container();
@@ -58,4 +76,29 @@ body > .wrapper { height: auto; min-height: 100%; }
 #content {
     .container();
     padding-top: 2.1em;
+}
+
+#footer {
+    padding-top: 30px;
+    color: #ddd;
+    font-size: 12px;
+    @media (max-width: @screen-xs) { 
+        padding-top: 10px;
+    }
+}
+#footer .info { .container(); }
+#footer a { color: #fff; }
+#footer .info p {
+    margin-bottom: 0;
+}
+#footer .psas {
+    margin-left: 0.4em;
+    font-style: italic;
+}
+#footer .rocket {
+    .pull-right();
+    width: 80px;
+    margin-top: -12px;
+
+    @media (max-width: @screen-xs) { display: none !important }
 }
