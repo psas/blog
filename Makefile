@@ -11,6 +11,9 @@ preview:
 theme:
 	lessc --clean-css $(LESS) > assets/style.css
 
+themedev:
+	lessc $(LESS) > assets/style.css
+
 full: theme site
 
 clean:

@@ -1,2 +1,39 @@
 @import "bootstrap.less";
 
+@footer-height:     100px;
+@psas-light-green:  #6a7f10;
+
+// Sticky Footer
+html, body, .wrapper { height: 100%; margin: 0; padding: 0; }
+body > .wrapper { height: auto; min-height: 100%; }
+#content { padding-bottom: @footer-height; }
+#footer { clear: both; position: relative; z-index: 10; height: @footer-height; margin-top: -@footer-height; }
+
+#header-wrap { background: @gray-lighter; }
+#breadcrumb { background:#f7f7f7; }
+#footer { background: @psas-light-green; color: #fff; }
+
+#header {
+    .container();
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+#header .identity,
+#header .identity:hover {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    word-spacing: 0.5em;
+}
+#header .identity img { margin-right: 10px; }
+
+#breadcrumb .crumbs {
+    .container();
+}
+
+#content {
+    .container();
+}
