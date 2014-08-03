@@ -1,0 +1,5 @@
+exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/Makefile']
+timezone:   America/Los_Angeles
+markdown:   kramdown
+
+excerpt_separator: "\n\n\n\n"
