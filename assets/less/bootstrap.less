@@ -49,7 +49,7 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h1:            floor((@font-size-base * 3.3)); // ~36px
 @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
 @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
 @font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
@@ -57,14 +57,14 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.87;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    Raleway, Helvetica, Arial, sans-serif;
 @headings-font-weight:    200;
-@headings-line-height:    1.1;
+@headings-line-height:    1.6;
 @headings-color:          inherit;
 
 
@@ -284,7 +284,7 @@
 
 // Large screen / wide desktop
 //** Deprecated `@screen-lg` as of v3.0.1
-@screen-lg:                  1200px;
+@screen-lg:                  1300px;
 @screen-lg-min:              @screen-lg;
 //** Deprecated `@screen-lg-desktop` as of v3.0.1
 @screen-lg-desktop:          @screen-lg-min;
