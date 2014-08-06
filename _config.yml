@@ -1,12 +1,12 @@
-exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/less', 'assets/lib/bootstrap']
-timezone:   America/Los_Angeles
-markdown:   kramdown
-permalink:  /:year/:title/
-excerpt_separator: "\n\n\n\n"
-
 name: PSAS Blog
 description: Portland State Aerospace Society Blog
 url: http://blog.psas.pdx.edu
+
+exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/less', 'assets/lib/bootstrap']
+timezone:   America/Los_Angeles
+markdown:   kramdown
+permalink:  /:year/:month/:title/
+excerpt_separator: "\n\n\n\n"
 
 defaults:
   -

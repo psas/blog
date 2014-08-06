@@ -4,7 +4,10 @@
  </a>
 </div>
 <div id="breadcrumb">
- <div class="crumbs">
-  PSAS Blog
- </div>
+ <ul class="crumbs">
+  <li><a href="/">PSAS Blog</a></li>
+  {% if page.url != '/index.html' %}
+   <li>{{ page.title }}</li>
+  {% endif %}
+ </ul>
 </div>

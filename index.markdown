@@ -1,6 +1,6 @@
 ---
 layout: base
-title: PSAS Blog
+title: PSAS Blog Home
 ---
 
 ## Recent Posts:
