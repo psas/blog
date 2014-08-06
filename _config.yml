@@ -4,6 +4,10 @@ markdown:   kramdown
 permalink:  /:year/:title/
 excerpt_separator: "\n\n\n\n"
 
+name: PSAS Blog
+description: Portland State Aerospace Society Blog
+url: http://blog.psas.pdx.edu
+
 defaults:
   -
     scope:
