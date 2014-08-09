@@ -1,10 +1,12 @@
-@import "bootstrap.less";
-
 @footer-height:     100px;
 @super-light:       #f7f8fa;
 @psas-light-green:  #6a7f10;
 @psas-dark-green:   #363f09;
 @psas-red:          #a33f1f;
+
+@import "bootstrap.less";
+@import "buttons.less";
+
 
 
 // Sticky Footer
@@ -34,7 +36,7 @@ body > .wrapper { height: auto; min-height: 100%; }
 #header {
     .container();
     padding-top: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
     @media (max-width: @screen-xs) {
         padding-top: 15px;
@@ -45,8 +47,8 @@ body > .wrapper { height: auto; min-height: 100%; }
 #header .identity:hover { 
     display: block;
     text-decoration: none;
-
     @media (max-width: @screen-xs) {
+        width: 100%;
         text-align: center;
     }
 }
@@ -65,6 +67,21 @@ body > .wrapper { height: auto; min-height: 100%; }
     margin-left: 12px;
     text-shadow: 0px 1px 1px #fff;
     @media (max-width: @screen-xs) { display: none !important }
+}
+
+#header .links {
+    .pull-right();
+    margin-top: -28px;
+    margin-bottom: 0;
+    list-style: none;
+    @media (max-width: @screen-xs) { display: none !important }
+}
+#header .links li {
+    display: block;
+    float: left;
+}
+#header .links a {
+    .btn();
 }
 
 #breadcrumb,
