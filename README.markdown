@@ -1,6 +1,6 @@
 # PSAS Official Blog
 
-## (blog.psas.pdx.edu)[http://blog.psas.pdx.edu]
+## [blog.psas.pdx.edu](http://blog.psas.pdx.edu)
 
 
 To write a new post, add a file in the `_posts` directory with the following
