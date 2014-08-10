@@ -1,6 +1,6 @@
 ---
 layout: base
-title: PSAS Blog Home
+title: PSAS Blog
 ---
 
 # Rocket Blog

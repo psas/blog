@@ -1,5 +1,5 @@
 name: PSAS Blog
-description: Portland State Aerospace Society Blog
+description: Portland State Aerospace Society is a student aerospace engineering project at Portland State University. We're building ultra-low-cost, open source rockets.
 url: http://blog.psas.pdx.edu
 
 exclude:    ['README.markdown', 'LICENSE', 'Makefile', 'assets/less', 'assets/lib/bootstrap']
