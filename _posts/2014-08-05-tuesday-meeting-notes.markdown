@@ -5,7 +5,7 @@ And then everyone showed up at 7pm for the regular meeting. Some updates:
 
 
 
-- Sunday September 20th is our current [Launch-12](https://github.com/psas/Launch-12) date.
+- Sunday September 28th is our current [Launch-12](https://github.com/psas/Launch-12) date.
 - Nathan did some frequency analysis on the accelerometer data, but it looks weird, with a weird dip at Fs/4. Needs more work.
 - Dave pushed the [airframe SolidWorks files](https://github.com/psas/sw-cad-airframe-lv2.3) to the PSAS git repo. And Jeremy even pushed his airframe files!
 - David baked the Linksys router at 100 deg F for two hours and couldn't reproduce any kind of data transmission problem. We're wondering now if the network problems were really internal floods / weird data.
