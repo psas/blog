@@ -1,0 +1,21 @@
+---
+title: GPS Study Group Meeting Notes
+---
+We started off the study group with Jamey giving his presentation: [The 20,000km view: How GPS works](http://jameysharp.github.io/2014-osbridge-gps/).
+
+Our plan is to meet every Tuesday except the 1st Tuesday of the month at 6pm before the PSAS meeting. We'll meet through December 15th and we're open to the public! We're going to explore how to write a software-based GPS receiver using the raw data we get off the JennerGPS open source GPS RF front-end. 
+
+
+
+
+The plan for the group is to collect data and play with it. We decided to start from the bottom up with specific concepts and tasks we can code instead of spending a lot of time with the higher theory. That doesn't mean there won't be theory, it just means it's a practical group and not a theory group. 
+
+We're going to start on the level of "how to play with digital signal processing" and work our way through the discrete tasks of building a GPS receiver, such as figuring out how to work with:
+
+ - the tracking code of a satellite
+ - the nav message
+ - the math for the position fix
+ - direct sequence spread sprectrum
+
+If you have any questions, please drop Jenner an email at jeh.wicker@gmail.com.
+
