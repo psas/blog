@@ -2,7 +2,11 @@
 title: LV3 Test Flight Meeting 2
 ---
 
-Forty-six days to go! We've authorized buying a fiberglass nose cone. We made progress on the oven controller, the rail buttons, 
+Forty-six days to go! We've authorized buying a fiberglass nose cone. We made progress on the oven controller, the rail buttons, and more scheduling with each other. See below the jump for details:
+
+
+
+
 
 **Things To Do**
 
