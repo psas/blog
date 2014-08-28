@@ -1,5 +1,9 @@
 We had a very short meeting this evening - the facilities people were testing the back up generators in FAB at 8pm so we left FAB before then just in case we got caught in a blackout. Some quick updates:
 
+
+
+
+
 ## Updates
 
 - In space news, we discussed the Copenhagen suborbital and spacex failures. The high speed video of the CS failure is not to be missed :) 
