@@ -12,5 +12,5 @@ OROC expressed reservations about our launch date (it's the same as their Sherid
 
 ## LV3 airframe test launch at Rocketober?
 
-We're considering a launch of the carbon fiber airframe ("LV3") at Oregon Rocketry's "Rocketober" launch the weekend of October 17th. There's ALOT to do on that airframe, so we don't know if we'll make it, but that's currently the goal. The nice part about the LV3 launch is that it will require no heavey infrastructure - it's essentially a simple L3 launch without all the electronics "stuff". More new on this next week, hopefully.
+We're considering a launch of the carbon fiber airframe ("LV3") at Oregon Rocketry's "Rocketober" launch the weekend of October 17th. There's A LOT to do on that airframe, so we don't know if we'll make it, but that's currently the goal. The nice part about the LV3 launch is that it will require no heavey infrastructure - it's essentially a simple L3 launch without all the electronics "stuff". More new on this next week, hopefully.
 
