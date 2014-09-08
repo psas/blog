@@ -1,4 +1,8 @@
-PSAS will be at [OMSI's Mini Maker Faire](https://www.omsi.edu/maker-faire-pdx) this Saturday and Sunday, 913-14, from 10am - 5pm. We need your help at the PSAS table in the PSU tent -- come to OMSI and help us chat up people about PSAS! See the signup below.
+---
+title: PSAS at OMSI
+---
+
+PSAS will be at [OMSI's Mini Maker Faire](https://www.omsi.edu/maker-faire-pdx) this Saturday and Sunday, (September 13-14), from 10am - 5pm. We need your help at the PSAS table in the PSU tent -- come to OMSI and help us chat up people about PSAS! See the signup below.
 
 
 
@@ -10,8 +14,8 @@ Please sign yourself up for a two or more hour slot:
 - Saturday
     - 10 - 12: Andrew
     - 12 - 14: Andrew
-    - 14 - 16:
-    - 16 - 17:
+    - 14 - 16: Nathan
+    - 16 - 17: Nathan
 - Sunday
     - 10 - 12: 
     - 12 - 14: 
