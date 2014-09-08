@@ -10,11 +10,11 @@ PSAS will be at [OMSI's Mini Maker Faire](https://www.omsi.edu/maker-faire-pdx) 
 Please sign yourself up for a two or more hour slot:
 
 - Friday
-    - 14 - 16: (Rocket stuff to OMSI) and setup: Andrew
+    - 14 - 16: (Rocket stuff to OMSI) and setup: Andrew, Gavin
 - Saturday
     - 10 - 12: Andrew
-    - 12 - 14: Andrew
-    - 14 - 16: Nathan
+    - 12 - 14: Andrew, Gavin
+    - 14 - 16: Nathan, Gavin
     - 16 - 17: Nathan
 - Sunday
     - 10 - 12: Jenner
