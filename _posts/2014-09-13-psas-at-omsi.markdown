@@ -17,8 +17,8 @@ Please sign yourself up for a two or more hour slot:
     - 14 - 16: Nathan
     - 16 - 17: Nathan
 - Sunday
-    - 10 - 12: 
-    - 12 - 14: 
+    - 10 - 12: Jenner
+    - 12 - 14: Jenner
     - 14 - 16:
     - 16 - 17: (Tear down and rocket stuff back to PSU): Andrew
 
