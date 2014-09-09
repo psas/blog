@@ -1,0 +1,91 @@
+---
+title: GPS Study Group Meeting Notes
+---
+It's important to know that I may or may not have followed along correctly so these notes are just for reference. I hope they're helpful!
+
+
+
+
+Kenny brought us a giant raw GPS data file, which is a binary file.
+
+What do I do when I have a way to look at the raw data file? Well, what is data? It's essentially an analog signal digitized. Remember the y axis of a sine wave, you test points on the x-axis and you'll get values that very between some plus and some minus.
+ 
+Example: 0,1,2,1,0,-2
+
+The raw data is samples from the analog signals that are RF so if you pick the right encoding, you'll find you'll see patterns. If you check for floating point, you might see values ranging from -1 to 1. Or for some small negative to some small positive range. 
+
+For integers, you might see 0 to 4096 or -2048 to +2048. It should look like random noise.
+
+So we have an antenna that's radiating radio waves (sine waves) which are composed of signals at many frequencies but we're only interested in 1.6GHz for GPS.
+
+The first thing we have to do is downconvert that signal to some manageable frequency because 1.6GHz isn't going to work. Downconverting uses analog hardware to shifts the signal down to something like 2MHz, at least in the low MHz suitable for an analog-to-digital converter that can turn that sine wave into digital signals we can feed into the computer.
+
+Let's talk more about downconverting, which is essentially sampling.
+
+So if we're at 5MHz, we know we have this sampled five million times a second signal and got back some analog voltage level for each sample. Knowing the frequency means we know how far apart the sample points are horizontally in time. The number of bits tells us how far apart the points can be in the amplitude (y axis), which is the range of voltages.
+
+14 or 12-bit ADCs are common so let's say we turn our 5 million samples into unsigned values ranging from zero to 2^14, which means we would have a file full of numbers between zero and 16,384. If we chose to turn our data into signed values, we could end up with values between -8194 and 8193.
+
+But let's go back to Kenny's file. We have no idea what digital representation we have, which encoding we have, so we have to take an educated guess. Our numbers could be unsigned or signed. They could be stored as integers, as floating points, basically as everything. Sometimes floating point numbers are in the same range as the integers between -2048 to 2047. Super annoying and silly but possibly more common than expected?
+
+So we try some things out.
+
+Mostly everybody was a Linux user so we opted to use octaldump (od). Some arguments are:
+
+od -f shows floating point but lots of nans means probably not that  
+od -x shows hex representation of the file  
+od -s shows ... signed 16 bit twos complement?  
+
+We ran the following command:
+
+od -s 2013_04_04_GNSS_SIGNAL_at_CTTC_SPAIN.dat
+
+and we got this:
+
+564173300 ffab 017d ffe1 0029 ffd0 002c 0052 ff94  
+564173320 0038 ff0b 011a ffd7 0034 0010 ff55 00e8  
+564173340 ffde fffd 0005 ffb5 004d 003b 0058 0050
+
+Jamey seemed pretty sure that this was signed 16-bit twos complement because the 16-bit is too long for whatever ADC made this data (12-bit or 14-bit, probably) so the output was padded and you can see the padding happening by seeing the last left-hand bit being extended from the second-to-last bit which is itself an 0xf or a 0x0.
+
+Jamey said confidently that twos complement is by far the most likely, and the evidence doesn't contradict it. Someone asked how he could be so sure so he said that if it were sign magnitude, the big bits would not be copied. The MSB would be zero or one so not extendable, and the LSBs where the extension would happen are not displaying repeated patterns.
+
+He sounded less confident that it's not 1s-complement but essentially you have to pick something to try, so we decided to proceed like it's 2s-complement and work until we've either succeeded or proven it's not.
+
+But there's another question... was this complex sampling or not?
+
+Let's talk about complex numbers first
+
+There are imaginary (y, vertical) and real (x, horizontal) axes of a graph. Imagine a real sine wave with points on it. The points go back and forth on the real axis only. Disregard y entirely, just look at the x component, which is the real component.
+
+e^ix=cosx+isinx  
+Euler's Identity
+
+Look at math for fourier transforms, you'll find that complex exponential.
+
+I asked if x was the amplitude and i the phase?
+
+You can't tell the difference of direction around the circle just using the real component. The imaginary axis lets you tell the difference between positive and negative frequencies.
+
+Wait, positive and negative frequencies?
+
+Well, complex sampling appears to violate the Nyquist limit. Nyquist says sample twice the frequency but complex sampling for each sample gets two parts - imaginary and real, so you only have to sample once per frequency to get your two points of data.
+
+It gets better. You're not actually sampling twice the number of bits in each sample, you're still getting the same number of data bits as you would if you were sampling once and violating the Nyquist limit. It's just that you're essentially sampling just the real part and doing math to "sample" the imaginary part.
+
+I lost the track in here for a little while as my brain exploded but I have vague notes about how the real and imaginary parts are ninety degrees off in phase, so the phase delay is always ninety degrees. When you sample, you get the real pass-through and calculate the imaginary delay using math of some sort, and what you end up with is the output I/Q data.
+
+The real pass-through data and the imaginary delay math is the I/Q math.
+
+I checked back in just in time to sum up that basically the process is this:
+
+1. Get the signal
+2. Downconvert the signal
+3. Use an ADC to get the digital signal
+4. Sample two ways at full Nyquist (2x freq) to get real pass-through and imaginary delay math
+
+So this data we have that we think is 16-bit twos complement signed. We don't know if it's singles or pairs, if it's complex sampled or not. We have to figure that out. Once we know that, the last thing is to find the sampling rate that the data was created using.
+
+If we have the sampling rate wrong, we could still do things but we'll wind up interpreting all the frequencies incorrectly. We might think a 2MHz signal is a 1.5MHz signal, which might be generally confusing later for reasons which will hopefully themselves become less generally confusing later.
+
+                                      
