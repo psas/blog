@@ -19,6 +19,6 @@ Please sign yourself up for a two or more hour slot:
 - Sunday
     - 10 - 12: Jenner
     - 12 - 14: Jenner
-    - 14 - 16:
-    - 16 - 17: (Tear down and rocket stuff back to PSU): Andrew
+    - 14 - 16: Jeremy
+    - 16 - 17: (Tear down and rocket stuff back to PSU): Andrew, Jeremy
 
