@@ -15,7 +15,7 @@ Please sign yourself up for a two or more hour slot:
     - 10 - 12: Andrew
     - 12 - 14: Andrew, Gavin
     - 14 - 16: Nathan, Gavin
-    - 16 - 17: Nathan
+    - 16 - 17: Nathan, Kenny
 - Sunday
     - 10 - 12: Jenner, Theo
     - 12 - 14: Jenner, Theo
