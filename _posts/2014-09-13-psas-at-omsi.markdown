@@ -12,7 +12,7 @@ Please sign yourself up for a two or more hour slot:
 - Friday
     - 14 - 16: (Rocket stuff to OMSI) and setup: Andrew, Gavin, Theo
 - Saturday
-    - 10 - 12: Andrew
+    - 10 - 12: Andrew, Aaron
     - 12 - 14: Andrew, Gavin
     - 14 - 16: Nathan, Gavin
     - 16 - 17: Nathan, Kenny
