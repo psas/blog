@@ -1,0 +1,19 @@
+---
+layout: base
+title: meeting-notes
+---
+<h2>Meeting Notes</h2>
+<hr>
+<div class="postlist">
+<ul>
+  {% for post in site.categories['meeting-notes'] %}
+    <li>
+        <a href="{{ post.url }}" class="title"><span class="date">{{ post.date  | date: '%b %-d' }} </span>{{ post.title }}</a></h5>
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ post.url }}" class="more">Read more...</a>
+    </li>
+  {% endfor %}
+</ul>
+</div>

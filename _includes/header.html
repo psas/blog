@@ -3,6 +3,16 @@
   <span class="logotext">Portland State Aerospace Society</span>
  </a>
  <ul class="links">
+  <li><div class="btn-group">
+   <a class="btn btn-main dropdown-toggle" data-toggle="dropdown">
+     Catagories <span class="caret"></span>
+   </a>
+   <ul class="dropdown-menu" role="menu">
+     <li><a href="/meeting-notes">Meeting Notes</a></li>
+     <li><a href="/gps">GPS</a></li>
+     <li><a href="/lv3">LV3.0</a></li>
+   </ul>
+  </div></li>
   <li><a href="http://psas.pdx.edu/" class="btn-main">psas.pdx.edu</a>
   <li><a href="https://twitter.com/pdxaerospace" class="btn-main">twitter</a></li>
   <li><a href="https://github.com/psas" class="btn-main">github</a></li>
@@ -13,7 +23,10 @@
  <ul class="crumbs">
   <li><a href="/">PSAS Blog</a></li>
   {% if page.url != '/index.html' %}
-   <li>{{ page.title }}</li>
+    {% if  page.categories.size > 0 %}
+        <li><a href="/{{ page.categories[0] }}/">{{ page.categories[0] }}</a></li>
+    {% endif %}
+    <li>{{ page.title }}</li>
   {% endif %}
  </ul>
 </div>

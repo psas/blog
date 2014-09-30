@@ -1,0 +1,20 @@
+---
+layout: base
+title: gps
+---
+<h2>Posts about our GPS study group</h2>
+Fall term, 2014
+<hr>
+<div class="postlist">
+<ul>
+  {% for post in site.categories['gps'] %}
+    <li>
+        <a href="{{ post.url }}" class="title"><span class="date">{{ post.date  | date: '%b %-d' }} </span>{{ post.title }}</a></h5>
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+        <a href="{{ post.url }}" class="more">Read more...</a>
+    </li>
+  {% endfor %}
+</ul>
+</div>
