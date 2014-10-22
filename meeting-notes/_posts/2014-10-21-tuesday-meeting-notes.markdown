@@ -1,6 +1,15 @@
-Crowdfunding update: Including a $2,000 donation from the Oregon IEEE, we're made over $7,000 of our $10,000 goal. There's 11 days left to raise funds, and we'll be working on getting out a corporate fundraising video to solicit funds from Garmin and Boeing.
+Crowdfunding update: Including a $2,000 donation from the Oregon IEEE, we're
+made over $7,000 of our $10,000 goal! There's 11 days left to raise funds, and
+we'll be working on getting out a corporate fundraising video to solicit funds
+from Garmin and Boeing.
 
-Project updates
+Project updates:
+
+
+
+
+
+
 
 Motor study group
 Working on parametric analysis using OpenRocket to get estimates for our design. This involves manipulating engine thrust, burn time, tank material to get an engine length and altitude estimate. The OpenRocket setup and Python engine script can be found in the GitHub Liquid Motor repo.
