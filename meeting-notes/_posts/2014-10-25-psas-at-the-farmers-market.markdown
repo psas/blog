@@ -8,8 +8,8 @@ talking to people about rockets! See signup below.
 Please sign yourself up for a slot: 
 
 - Time slots:
-  - 8:00  - 8:30 (setup): Theo 
-  - 8:30  - 10:00: Theo
-  - 10:00 - 12:00: Theo
-  - 12:00 - 2:00:  Theo
-  - 2:00  - 2:30 (teardown): Theo 
+  - 8:00  - 8:30 (setup): Theo, Will 
+  - 8:30  - 10:00: Theo, Will
+  - 10:00 - 12:00: Theo, Will
+  - 12:00 - 2:00:  Theo, Will
+  - 2:00  - 2:30 (teardown): Theo, Will 
