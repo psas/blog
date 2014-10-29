@@ -7,7 +7,7 @@ General updates
 **Public relations:** We gave an Intel presentation last Thursday (10/23) as a crowdfunding reward; it was supposed to go an hour, but it went 1:45, and was a big success.
 We showed up to the Portland Farmer's Market and got a great reception. We also raised $75 cash!
 
-**Fundraising:** The crowdfunding campaign is at $8,125, with four days left to go. It's time to push through to the end so we can make our goal. We also created a video for corporate donors which is now on our YouTube channel and on a landing page at http://psas.pdx.edu/donate. Foyr crowdfunding appeals, we should still use www.foundation.pdx.edu/crowdfunding/psas.
+**Fundraising:** The crowdfunding campaign is at $8,125, with four days left to go. It's time to push through to the end so we can make our goal. We also created a video for corporate donors which is now on our YouTube channel and on a landing page at http://psas.pdx.edu/donate. For crowdfunding appeals, we should still use www.foundation.pdx.edu/crowdfunding/psas.
 
 **New Home:** This Friday, the EPL is moving to their new room, and we can move into the old EPL.
 
