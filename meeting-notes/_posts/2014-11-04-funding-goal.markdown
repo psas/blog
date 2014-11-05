@@ -7,6 +7,11 @@ receiving a total of $10,100 in donations, about $2,000 of which
 arrived within the last week of the campaign.  We are very grateful to
 all of our donors!
 
+
+
+
+
+
 ![Total donations over time](http://blog.psas.pdx.edu/images/totalfunds.svg)
 
 > Total donations over time
