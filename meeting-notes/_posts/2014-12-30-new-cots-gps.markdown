@@ -19,3 +19,8 @@ towards our own GPS implementation we just need the basics.
 
 Work is continuing on a revision of our raw GPS board with a CPLD to transform
 the parallel interface into a more microcontroller friendly SPI format.
+
+
+[![New GPS](http://blog.psas.pdx.edu/images/venus-gps.jpg)](http://blog.psas.pdx.edu/images/venus-gps.jpg)
+
+> The new GPS board
